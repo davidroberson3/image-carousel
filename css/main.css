@@ -1,0 +1,148 @@
+body {
+    font-size: 12pt;
+    font-family: Georgia, serif;
+    text-align: center;
+}
+
+h1 {
+    font-size: 26pt;
+    font-family: Verdana, sans-serif;
+}
+
+
+/**/
+
+#image-carousel {
+    display: block;
+    height: auto;
+    width: 600px;
+    margin: auto;
+}
+
+.unselectable {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+#navigation-frame {
+    display: block;
+    height: 25px;
+    width: auto;
+}
+
+
+/*Navigation buttons*/
+
+.nav-button {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    border-radius: 50%;
+}
+
+.nav-button:hover {
+    background-color: #aaa;
+    width: 16px;
+    height: 16px;
+    border: 2px solid black;
+}
+
+.nav-button:active {
+    background-color: #fff;
+    width: 16px;
+    height: 16px;
+    border: 2px solid black;
+}
+
+.active-nav-button {
+    background-color: #fff;
+    width: 16px;
+    height: 16px;
+    border: 2px solid black;
+}
+
+
+/*Images and prev/next buttons*/
+
+#main-carousel-frame {
+    position: relative;
+    margin: 0;
+    height: 300px;
+    width: auto;
+    background-color: black;
+    border-radius: 20px;
+    white-space: nowrap;
+    text-align: center;
+}
+
+#previous-button {
+    display: inline-block;
+    float: left;
+    margin: 0;
+    width: 40px;
+    height: 300px;
+    background-color: black;
+    border-top-left-radius: inherit;
+    border-bottom-left-radius: inherit;
+}
+
+#next-button {
+    display: inline-block;
+    float: right;
+    margin: 0;
+    width: 40px;
+    height: 300px;
+    background-color: black;
+    border-top-right-radius: inherit;
+    border-bottom-right-radius: inherit;
+}
+
+#previous-button:hover {
+    background-color: #555;
+}
+
+#previous-button:active {
+    background-color: #aaa;
+}
+
+#next-button:hover {
+    background-color: #555;
+}
+
+#next-button:active {
+    background-color: #aaa;
+}
+
+
+/*Images*/
+
+#image-frame {
+    display: inline;
+    height: inherit;
+    width: inherit;
+}
+
+.helper {
+    display: inline-block;
+    margin: 0;
+    height: 100%;
+    width: 0;
+    vertical-align: middle;
+}
+
+.carousel-image {
+    display: none;
+    max-height: 95%;
+    max-width: 85%;
+    vertical-align: middle;
+}
+
+.image-visible {
+    display: inline-block;
+}
